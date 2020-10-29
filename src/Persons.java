@@ -8,8 +8,6 @@ public class Persons extends Destinations {
 
     public Persons(String country, int originalPrice, double travelAllowance, int travelLength, int persons) {
         super(country, originalPrice, travelAllowance, travelLength);
-        this.persons = persons;
-        this.name = name;
     }
 
     public Persons() {
@@ -18,12 +16,13 @@ public class Persons extends Destinations {
 
     public void showPersons() {
 
-        while (running) {
-            Scanner sc = new Scanner(System.in);
-            String cmd = sc.nextLine();
-            System.out.println("Please enter the name of passenger number: " persons);
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
 
-            if (cmd == "0") {
+        while (running) {
+            System.out.println("Please enter the name of " + persons + "passengers");
+
+            if (name == "0") {
                 System.out.println("Going back!");
                 running = false;
             }
