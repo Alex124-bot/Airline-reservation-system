@@ -1,14 +1,41 @@
-import javax.print.attribute.standard.Destination;
 import java.util.Scanner;
 
 public class Destinations extends Menu {
 
     boolean running = true;
     int persons;
-
     String country;
     int originalPrice;
     double travelAllowance;
+
+    public boolean isRunning() {
+        return running;
+    }
+
+    public int getPersons() {
+        return persons;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public int getOriginalPrice() {
+        return originalPrice;
+    }
+
+    public double getTravelAllowance() {
+        return travelAllowance;
+    }
+
+    public int getTravelLength() {
+        return travelLength;
+    }
+
+    public double getTotalCost() {
+        return totalCost;
+    }
+
     int travelLength;
     double totalCost;
 
