@@ -1,8 +1,12 @@
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class Persons extends Destinations {
 
     boolean running = true;
+
+    public Persons(String country, int originalPrice, double travelAllowance, int travelLength) {
+        super(country, originalPrice, travelAllowance, travelLength);
+    }
 
     void persons() {
 
@@ -23,6 +27,6 @@ public class Persons extends Destinations {
             }
         }
     }
-}*/
+}
 
 
