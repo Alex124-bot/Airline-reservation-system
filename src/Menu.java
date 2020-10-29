@@ -1,9 +1,20 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Menu  {
+public class Menu {
 
-    public static void main(String[] args) {
+    private ArrayList<Destinations> destinations = new ArrayList<>();
+
+    void menu() {
+        destinations.add(new Destinations("Jutland", 451, 1.04, 450));
+        destinations.add(new Destinations("Sweden", 267, 1.04, 243));
+        destinations.add(new Destinations("Spain", 692, 1.0002, 1392));
+        destinations.add(new Destinations("Austria", 1034, 1.0002, 1791));
+        destinations.add(new Destinations("Holland", 354, 1.0002, 679));
+        destinations.add(new Destinations("China", 399, 1.04, 8421));
+
         Scanner sc = new Scanner(System.in);
+
         boolean running = true;
 
         while (running) {
@@ -19,8 +30,7 @@ public class Menu  {
             String cmd = sc.nextLine();
 
             if (cmd.equals("1")) {
-                Destinations one = new Destinations("Jutland", 451, 1.04, 450);
-                one.destination();
+                destinations.get(0);
             }
 
             if (cmd.equals("2")) {

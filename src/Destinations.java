@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 public class Destinations extends Menu {
 
-    int persons;
     boolean running = true;
+    int persons;
+
     String country;
     int originalPrice;
     double travelAllowance;
@@ -34,7 +35,6 @@ public class Destinations extends Menu {
 
             if (cmd > 0) {
                 persons = cmd;
-                new Persons();
             }
                 else if (cmd == 0) {
                 System.out.println("Going back!");
