@@ -11,9 +11,8 @@ public class Destinations extends Menu {
     int travelLength;
     double totalCost;
 
-    public Destinations(String country, int persons, int originalPrice, double travelAllowance, int travelLength) {
+    public Destinations(String country, int originalPrice, double travelAllowance, int travelLength) {
         this.country = country;
-        this.persons = persons;
         this.originalPrice = originalPrice;
         this.travelAllowance = travelAllowance;
         this.travelLength = travelLength;
@@ -35,10 +34,6 @@ public class Destinations extends Menu {
 
             if (cmd > 0) {
                 persons = cmd;
-                totalCost = persons * (originalPrice * travelAllowance);
-                System.out.println("You have chosen " + persons + " persons");
-                System.out.println("");
-                System.out.println("So far your total cost is " + persons + " persons * " + originalPrice * travelAllowance + " kr = "  + totalCost + " kr");
                 new Persons();
             }
                 else if (cmd == 0) {

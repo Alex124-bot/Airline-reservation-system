@@ -19,32 +19,32 @@ public class Menu  {
             String cmd = sc.nextLine();
 
             if (cmd.equals("1")) {
-                Destinations one = new Destinations("Jutland", 0, 451, 1.04, 450);
+                Destinations one = new Destinations("Jutland", 451, 1.04, 450);
                 one.destination();
             }
 
             if (cmd.equals("2")) {
-                Destinations one = new Destinations("Sweden", 0, 267, 1.04, 243);
+                Destinations one = new Destinations("Sweden", 267, 1.04, 243);
                 one.destination();
             }
 
             if (cmd.equals("3")) {
-                Destinations one = new Destinations("Spain", 0, 692, 1.0002, 1392);
+                Destinations one = new Destinations("Spain", 692, 1.0002, 1392);
                 one.destination();
             }
 
             if (cmd.equals("4")) {
-                Destinations one = new Destinations("Austria", 0, 1034, 1.0002, 1791);
+                Destinations one = new Destinations("Austria", 1034, 1.0002, 1791);
                 one.destination();
             }
 
             if (cmd.equals("5")) {
-                Destinations one = new Destinations("Holland", 0, 354, 1.0002, 679);
+                Destinations one = new Destinations("Holland", 354, 1.0002, 679);
                 one.destination();
             }
 
             if (cmd.equals("6")) {
-                Destinations one = new Destinations("China", 0, 399, 1.04, 8421);
+                Destinations one = new Destinations("China", 399, 1.04, 8421);
                 one.destination();
             }
 
