@@ -7,6 +7,7 @@ public class Destinations extends Menu {
     String country;
     int originalPrice;
     double travelAllowance;
+    int travelLength;
     int per;
 
     public void setPersons(int persons) {
@@ -41,7 +42,7 @@ public class Destinations extends Menu {
         return totalCost;
     }
 
-    int travelLength;
+
     double totalCost;
 
     public Destinations(String country, int originalPrice, double travelAllowance, int travelLength) {
@@ -49,6 +50,34 @@ public class Destinations extends Menu {
         this.originalPrice = originalPrice;
         this.travelAllowance = travelAllowance;
         this.travelLength = travelLength;
+    }
+
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setOriginalPrice(int originalPrice) {
+        this.originalPrice = originalPrice;
+    }
+
+    public void setTravelAllowance(double travelAllowance) {
+        this.travelAllowance = travelAllowance;
+    }
+
+    public void setPer(int per) {
+        this.per = per;
+    }
+
+    public void setTravelLength(int travelLength) {
+        this.travelLength = travelLength;
+    }
+
+    public void setTotalCost(double totalCost) {
+        this.totalCost = totalCost;
     }
 
     public void destination() {
@@ -65,15 +94,15 @@ public class Destinations extends Menu {
             while (running) {
                 Scanner sc = new Scanner(System.in);
                 int cmd = sc.nextInt();
+                per = cmd;
 
                 if (cmd > 0) {
-                    per = cmd;
                     setPersons(per);
                     totalCost = persons * (originalPrice * travelAllowance);
                     System.out.println("You have chosen " + persons + " persons");
                     System.out.println("So far your total cost is " + persons + " persons * " + originalPrice * travelAllowance + " kr = " + totalCost + " kr");
                     System.out.println("If you want to go back press 0 and enter");
-                    Persons one = new Persons(getCountry(),getOriginalPrice(),getTravelAllowance(),travelLength);
+                    Persons one = new Persons(getCountry(),getOriginalPrice(),getTravelAllowance(),getTravelLength());
                     one.showPersons();
 
                 } else if (cmd == 0) {
