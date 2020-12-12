@@ -13,8 +13,7 @@ public class Menu {
 
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setCountry(String country) { this.country = country;
     }
 
     public void setOriginalPrice(int originalPrice) {
